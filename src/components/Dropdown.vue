@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 import ButtonDefault from "./ButtonDefault.vue";
-import {ref} from "vue";
 
 defineProps<{ labels: string[] }>()
 
