@@ -4,9 +4,9 @@ import App from './App.vue'
 
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { IoMenu } from "oh-vue-icons/icons";
+import { IoMenu, BiGithub, BiLinkedin } from "oh-vue-icons/icons";
 
-addIcons(IoMenu);
+addIcons(IoMenu, BiGithub, BiLinkedin);
 
 const app = createApp(App);
 app.component("v-icon", OhVueIcon);
