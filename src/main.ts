@@ -2,4 +2,13 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+import { IoMenu } from "oh-vue-icons/icons";
+
+addIcons(IoMenu);
+
+const app = createApp(App);
+app.component("v-icon", OhVueIcon);
+app.mount("#app");
+
