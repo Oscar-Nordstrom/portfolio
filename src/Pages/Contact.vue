@@ -3,7 +3,7 @@ import ImageBig from "../components/ImageBig.vue";
 </script>
 
 <template>
-  <div class="flex justify-center w-[100vw] h-[90vh]">
+  <div class="flex justify-center w-[100vw] h-[88vh]">
     <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-32 text-center">
       <ImageBig></ImageBig>
       <div class="flex flex-col  items-center gap-10">
