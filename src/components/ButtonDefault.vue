@@ -1,10 +1,11 @@
 <script setup lang="ts">
-defineProps<{ text: string }>()
+
+
+defineProps<{ text:string, linkTo: string}>()
 </script>
 
 <template>
-
-  <Button className="btn border-0 font-bold">{{ text }}</Button>
+  <router-link :to="linkTo"><Button className="btn border-0 font-bold">{{ text }}</Button></router-link>
 </template>
 
 <style scoped>
