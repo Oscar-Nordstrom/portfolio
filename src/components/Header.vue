@@ -7,6 +7,6 @@ import ThemeSwap from "./ThemeSwap.vue";
 <template>
   <div className="flex justify-end items-center gap-4 w-[100vw] h-[5vh] p-2">
     <ThemeSwap></ThemeSwap>
-    <Dropdown :labels="['Home','About','skills', 'Contact']"></Dropdown>
+    <Dropdown :props="[{label:'Home',route:'/'},{label:'About',route:'/about'},{label:'Skills',route:'/skills'},{label:'Contact',route:'/contact'}]"></Dropdown>
   </div>
 </template>
