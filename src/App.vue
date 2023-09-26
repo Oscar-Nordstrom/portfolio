@@ -8,9 +8,9 @@ import {store} from "../store.ts";
 
 <template>
   <div :data-theme="store.darkTheme?'dark':'light'">
-  <Header></Header>
-  <MainBody></MainBody>
-  <MainFooter></MainFooter>
+    <Header></Header>
+    <MainBody></MainBody>
+    <MainFooter></MainFooter>
   </div>
 </template>
 
