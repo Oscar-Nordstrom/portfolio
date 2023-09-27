@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 import ImageBig from "../components/ImageBig.vue";
-import ButtonDefault from "../components/ButtonDefault.vue";
 import LinkButton from "../components/LinkButton.vue";
 </script>
 
