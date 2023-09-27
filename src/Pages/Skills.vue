@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 import Skill from "../components/Skill.vue";
-import {FcLinux} from "oh-vue-icons/icons";
 
 interface skill{
   icon: string,
