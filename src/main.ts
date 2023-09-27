@@ -5,7 +5,8 @@ import {createRouter, createWebHashHistory} from "vue-router";
 import Home from "./Pages/Home.vue";
 import Contact from "./Pages/Contact.vue";
 import NotFound from "./Pages/NotFound.vue";
-
+import Skills from "./Pages/Skills.vue";
+import About from "./Pages/About.vue";
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 
@@ -50,7 +51,6 @@ import {
     IoSearchSharp
 
 } from "oh-vue-icons/icons";
-import Skills from "./Pages/Skills.vue";
 addIcons(
     FaBars,
     BiGithub,
@@ -104,6 +104,7 @@ const router = createRouter({
         { path: '/', name:'Home', component: Home },
         { path: '/contact', name:'Contact', component: Contact },
         { path: '/skills', name:'Skills', component: Skills },
+        { path: '/about', name:'About', component: About },
         { path: '/:pathMatch(.*)*', name:'NotFound', component: NotFound }
     ]
 })
