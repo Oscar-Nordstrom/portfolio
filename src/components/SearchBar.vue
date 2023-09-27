@@ -16,7 +16,7 @@ function clear(){
       <div class="px-5 ">
         <v-icon class="cursor-pointer" @click="clear" name="bi-x-lg"></v-icon>
       </div>
-      <input @input="update($event, onChange)" type="text" id="searchInput" class="w-full  h-full rounded-md border-0 bg-transparent focus:outline-0"/>
+      <input @input="update($event, onChange)" type="text" id="searchInput" class="w-full h-full border-0 bg-transparent focus:border-0 focus:outline-0 focus:outline-none"/>
       <div class="px-5">
         <v-icon name="io-search-sharp"></v-icon>
       </div>
