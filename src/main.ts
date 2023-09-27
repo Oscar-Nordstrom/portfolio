@@ -45,7 +45,8 @@ import {
     CoUnity,
     MdGames,
     ViFileTypeArduino,
-    BiGit
+    BiGit,
+    FcLinux
 
 } from "oh-vue-icons/icons";
 import Skills from "./Pages/Skills.vue";
@@ -89,7 +90,8 @@ addIcons(
     CoUnity,
     MdGames,
     ViFileTypeArduino,
-    BiGit
+    BiGit,
+    FcLinux
 );
 
 
