@@ -11,7 +11,7 @@ import { OhVueIcon, addIcons } from "oh-vue-icons";
 
 
 import {
-    BiList,
+    FaBars,
     BiGithub,
     BiLinkedin,
     BiXLg,
@@ -46,12 +46,13 @@ import {
     MdGames,
     ViFileTypeArduino,
     BiGit,
-    FcLinux
+    FcLinux,
+    IoSearchSharp
 
 } from "oh-vue-icons/icons";
 import Skills from "./Pages/Skills.vue";
 addIcons(
-    BiList,
+    FaBars,
     BiGithub,
     BiLinkedin,
     BiXLg,
@@ -91,7 +92,8 @@ addIcons(
     MdGames,
     ViFileTypeArduino,
     BiGit,
-    FcLinux
+    FcLinux,
+    IoSearchSharp
 );
 
 

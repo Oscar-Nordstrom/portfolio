@@ -1,13 +1,11 @@
 <script setup lang="ts">
 
 import Skill from "../components/Skill.vue";
+import SearchBar from "../components/SearchBar.vue";
+import {ISkill} from "../types.ts";
+import {reactive} from "vue";
 
-interface skill{
-  icon: string,
-  text: string,
-}
-
-const skills: skill[] = [
+const skills: ISkill[] = [
   {icon: "ViFileTypeCsharp2"            ,text: "C#"},
   {icon: "ViFileTypeCpp3"               ,text: "C++"},
   {icon: "ViFileTypeReactjs"            ,text: "React"},
@@ -34,7 +32,7 @@ const skills: skill[] = [
   {icon: "BiKeyFill"                    ,text: "Keycloak"},
   {icon: "ViFileTypeDocker2"            ,text: "Docker"},
   {icon: "RiTeamFill"                   ,text: "Project Management"},
-  {icon: "RiTestTubeFill"               ,text: "Scrum"},
+  {icon: "RiTeamFill"                   ,text: "Scrum"},
   {icon: "FcLinux"                      ,text: "Linux"},
   {icon: "GiArtificialIntelligence"     ,text: "Artificial Intelligence"},
   {icon: "RiTeamFill"                   ,text: "Project Management"},
@@ -43,17 +41,23 @@ const skills: skill[] = [
   {icon: "ViFileTypeArduino"            ,text: "Arduino"},
   {icon: "BiGit"                        ,text: "Git"},
 ]
-
 skills.sort((a,b)=>a.text.localeCompare(b.text));
+let skillsToDisplay = reactive({skills});
+function searchChange(text: string){
+  skillsToDisplay.skills = skills.filter(e => e.text.toLowerCase().includes(text.toLowerCase()));
+}
 
 </script>
 
 <template>
-  <div class="flex justify-center w-[100wv] h-[88vh]">
-    <div class="flex flex-col items-center gap-3 max-w-[90vw] max-h-[88vh]">
-      <h1 class="text-[10vw] md:text-[7vw] lg:text-[5vw]">Skills</h1>
+  <div class="flex justify-center w-[100wv] h-[88vh] ">
+    <div class="flex flex-col items-center gap-10 max-w-[90vw] max-h-[88vh]">
+      <div class="flex flex-col lg:flex-row items-center justify-between w-[90vw] md:w-[60vw] xl:w-[50vw]">
+        <h1 class="text-[10vw] md:text-[7vw] lg:text-[5vw]">Skills</h1>
+        <SearchBar :on-change="searchChange"></SearchBar>
+      </div>
       <div class="flex flex-wrap gap-10 overflow-y-auto">
-        <skill v-for="s in skills" :icon="s.icon" :text="s.text"></skill>
+        <skill v-for="s in skillsToDisplay.skills" :icon="s.icon" :text="s.text"></skill>
       </div>
     </div>
   </div>
