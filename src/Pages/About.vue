@@ -26,11 +26,11 @@ import LinkButton from "../components/LinkButton.vue";
             </div>
             <div class="flex items-center gap-2">
               <img src="../assets/bth.jpg" class="w-[7vw] sm:w-[5vw] lg:w-[2vw]"/>
-              <h1><span class="font-bold">Game Programming - BTH</span> Jul 2023 - Sep 2023</h1>
+              <h1><span class="font-bold">Game Programming - BTH</span> Aug 2020 - Jun 2023</h1>
             </div>
             <div class="flex items-center gap-2">
               <img src="../assets/bth.jpg" class="w-[7vw] sm:w-[5vw] lg:w-[2vw]"/>
-              <h1><span class="font-bold">Technical Preparatory - BTH</span> Jul 2023 - Sep 2023</h1>
+              <h1><span class="font-bold">Technical Preparatory - BTH</span> Aug 2019 - Jun 2020</h1>
             </div>
           </div>
         </div>
