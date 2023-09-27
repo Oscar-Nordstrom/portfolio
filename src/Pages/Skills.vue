@@ -50,7 +50,7 @@ function searchChange(text: string){
 </script>
 
 <template>
-  <div class="flex justify-center w-[100wv] h-[88vh] ">
+  <div class="flex justify-center w-[100wv] h-[88vh]">
     <div class="flex flex-col items-center gap-10 max-w-[90vw] max-h-[88vh]">
       <div class="flex flex-col lg:flex-row items-center justify-between w-[90vw] md:w-[60vw] xl:w-[50vw]">
         <h1 class="text-[10vw] md:text-[7vw] lg:text-[5vw]">Skills</h1>
