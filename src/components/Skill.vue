@@ -12,8 +12,8 @@ function toKebab(text:string): string{
 
 <template>
   <div class="flex gap-2">
-    <v-icon :name="toKebab(icon)"></v-icon>
-    <h3>{{text}}</h3>
+    <v-icon :name="toKebab(icon)" scale="2.0"></v-icon>
+    <h3 class="text-2xl">{{text}}</h3>
   </div>
 </template>
 
