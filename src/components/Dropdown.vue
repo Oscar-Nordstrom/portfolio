@@ -13,7 +13,7 @@ defineProps<{ props: prop[]}>()
 </script>
 
 <template>
-  <div class="dropdown dropdown-hover dropdown-end">
+  <div class="dropdown dropdown-hover dropdown-end z-10">
     <label tabindex="0" class="btn bg-transparent border-0"><v-icon name="fa-bars" scale="1.5"/></label>
     <div tabindex="0" class="dropdown-content menu">
       <div class="flex flex-col lg:flex-row justify-center items-center gap-2">

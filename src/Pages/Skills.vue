@@ -4,6 +4,8 @@ import Skill from "../components/Skill.vue";
 import SearchBar from "../components/SearchBar.vue";
 import {ISkill} from "../types.ts";
 import {reactive} from "vue";
+import {store} from "../../store.ts";
+import Swapper from "../components/Swapper.vue";
 
 const skills: ISkill[] = [
   {icon: "ViFileTypeCsharp2"            ,text: "C#"},
@@ -52,12 +54,14 @@ function searchChange(text: string){
 <template>
   <div class="flex justify-center w-[100wv] h-[88vh]">
     <div class="flex flex-col items-center gap-10 max-w-[90vw] max-h-[88vh]">
-      <div class="flex flex-col lg:flex-row items-center justify-between w-[90vw] md:w-[60vw] xl:w-[50vw]">
+      <div class="flex flex-col items-center justify-between w-[90vw] md:w-[60vw] xl:w-[50vw]">
         <h1 class="text-[10vw] md:text-[7vw] lg:text-[5vw]">Skills</h1>
-        <SearchBar :on-change="searchChange"></SearchBar>
+        <div class="flex gap-5">
+          <SearchBar :on-change="searchChange"></SearchBar>
+        </div>
       </div>
-      <div class="flex flex-wrap gap-10 overflow-y-auto">
-        <skill v-for="s in skillsToDisplay.skills" :icon="s.icon" :text="s.text"></skill>
+      <div class="flex flex-col lg:flex-row lg:flex-wrap gap-10 overflow-y-auto">
+          <skill v-for="s in skillsToDisplay.skills" :icon="s.icon" :text="s.text"></skill>
       </div>
     </div>
   </div>

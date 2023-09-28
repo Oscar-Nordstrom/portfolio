@@ -48,7 +48,10 @@ import {
     ViFileTypeArduino,
     BiGit,
     FcLinux,
-    IoSearchSharp
+    IoSearchSharp,
+    IoGridSharp,
+    IoSunny,
+    IoMoon
 
 } from "oh-vue-icons/icons";
 addIcons(
@@ -93,7 +96,10 @@ addIcons(
     ViFileTypeArduino,
     BiGit,
     FcLinux,
-    IoSearchSharp
+    IoSearchSharp,
+    IoGridSharp,
+    IoSunny,
+    IoMoon
 );
 
 
