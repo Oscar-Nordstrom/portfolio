@@ -4,8 +4,6 @@ import Skill from "../components/Skill.vue";
 import SearchBar from "../components/SearchBar.vue";
 import {ISkill} from "../types.ts";
 import {reactive} from "vue";
-import {store} from "../../store.ts";
-import Swapper from "../components/Swapper.vue";
 
 const skills: ISkill[] = [
   {icon: "ViFileTypeCsharp2"            ,text: "C#"},
