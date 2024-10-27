@@ -19,8 +19,9 @@ import LinkButton from "../components/LinkButton.vue";
                 <h1 class="font-bold">Software Developer - Roxtec</h1>
                 <h1>Oct 2024 - Now</h1>
               </div>
-
-              <img src="../assets/experis.jpg" class="w-[7vw] sm:w-[5vw] lg:w-[2vw]" alt="Experis logo"/>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/experis.jpg" class="w-[7vw] sm:w-[5vw] lg:w-[2vw]" alt="Roxtec logo"/>
               <div class="flex flex-col lg:flex-row lg:gap-2">
                 <h1 class="font-bold">Fullstack Developer - Experis</h1>
                 <h1>Jul 2023 - Oct 2024</h1>
