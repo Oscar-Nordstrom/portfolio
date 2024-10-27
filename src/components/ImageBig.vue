@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <img src="/img.jpg" class="w-[20vw] rounded-full z-[1] ">
+    <img src="/ProfilePicture.png" class="w-[20vw] rounded-full z-[1] " alt="Profile Picture">
 </template>
 
 <style scoped>

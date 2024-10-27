@@ -14,16 +14,8 @@ import ImageBig from "../components/ImageBig.vue";
             <h1>Oscar Nordström</h1>
           </div>
           <div class="flex gap-3 ">
-            <v-icon name="fa-phone-alt"></v-icon>
-            <a href="tel:0708518060" target="_blank">070-851 80 60</a>
-          </div>
-          <div class="flex gap-3 ">
             <v-icon name="md-alternateemail"></v-icon>
-            <a href="mailto:oscar.nordstrom2000@gmail.com" target="_blank">oscar.nordstrom2000@gmail.com</a>
-          </div>
-          <div class="flex gap-3 ">
-            <v-icon name="md-alternateemail"></v-icon>
-            <a href="mailto:oscar.nordstrom@se.experis.com" target="_blank">oscar.nordstrom@se.experis.com</a>
+            <a href="mailto:contact@oscarnordstrom.se" target="_blank">contact@oscarnordstrom.se</a>
           </div>
         </div>
 
